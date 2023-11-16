@@ -85,7 +85,7 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
-    '/js/navhighlight.js'
+    '/irma-documentation/js/navhighlight.js'
   ],
 
   scrollToTop: true,

@@ -26,7 +26,7 @@ An [IRMA disclosure session](what-is-irma.md#session-types) is started by a veri
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--IRMA app-->
-<img src="/docs/assets/pre-condiscon.png" class="ss" alt="pre-condiscon" />
+<img src="assets/pre-condiscon.png" class="ss" alt="pre-condiscon" />
 <!--Session request (old format, JSON)-->
 ```json
 {
@@ -53,7 +53,7 @@ An [IRMA disclosure session](what-is-irma.md#session-types) is started by a veri
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--IRMA app-->
-<img src="/docs/assets/condiscon.png" class="ss" alt="condiscon" />
+<img src="assets/condiscon.png" class="ss" alt="condiscon" />
 <!--Session request (condiscon, JSON)-->
 ```json
 {
