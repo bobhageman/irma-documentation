@@ -27,7 +27,12 @@ jobs:
         run: yarn build
         working-directory: website
         # 👆 Build steps
-
+      - uses: actions/upload-artifact@v3
+        with:
+          name: page
+          path: website/build
+          if-no-files-found: error
+          
   deploy:
     needs: build
     permissions:
@@ -38,8 +43,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      #- name: Checkout
+      #  uses: actions/checkout@v4
+      - uses: actions/download-artifact@master
+        with:
+          name: page
+          path: .
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
