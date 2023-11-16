@@ -30,7 +30,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: page
-          path: website/build
+          path: website/build/irma-documentation
           if-no-files-found: error
           
   deploy:
